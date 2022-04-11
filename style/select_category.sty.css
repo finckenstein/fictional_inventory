@@ -1,0 +1,88 @@
+.productInfo{
+  display: grid;
+  grid-template-columns: 13vw 13vw;
+  grid-template-rows: 10vh 13vh 13vh;
+  float: left;
+  text-align: center;
+  padding-right: 5vw;
+}
+.productInfo > div{
+  border: solid grey thin;
+}
+.title{
+  grid-area: 1 / 1 / 2 / 2;
+}
+.image{
+  grid-area: 2 / 1 / 4 / 2;
+}
+img{
+  width: 90%;
+}
+.addCart > img{
+  width: 25%;
+}
+.price{
+  grid-area: 3 / 2 / 4 / 3;
+}
+.addAndSubtract{
+  grid-area: 2 / 2 / 3 / 3;
+}
+.addCart{
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+
+
+#viewItems{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25vw;
+  background-color: white;
+  z-index: 1;
+}
+#viewCart{
+  position: fixed;
+  right: 0;
+  width: 5%;
+  border: solid;
+  border-radius: 3vw;
+  padding: 0.25vw;
+}
+
+
+.cartTop{
+  display: grid;
+  grid-template-columns: 5vw auto;
+  grid-template-rows: auto auto auto auto;
+}
+.cartTitle{
+  text-align: center;
+  grid-area: 1 / 2 / 2 / 3;
+}
+.close{
+  grid-area: 1 / 1 / 2 / 2;
+}
+.close > button{
+  background-color: red;
+  border: none;
+  font-size: 2vw;
+  color: white;
+  padding: 1vw;
+}
+.toBasket{
+  padding-top: 5vh;
+  text-align: center;
+  grid-area: 4 / 1 / 5 / 3;
+}
+.totalPrice{
+  grid-area: 2 / 1 / 3 / 3;
+}
+#basketList{
+  grid-area: 3 / 1 / 4 / 3;
+  width: 100%;
+  height: 70vh;
+  overflow: auto;
+  text-align:justify;
+  border: solid thin;
+}
